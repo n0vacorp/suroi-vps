@@ -2,10 +2,10 @@ import type { TeamSize } from "../../../common/src/constants";
 
 export const Config = {
     regions: {
-        dev: {
-            name: "Local Server",
-            mainAddress: "http://127.0.0.1:8000",
-            gameAddress: "ws://127.0.0.1:800<ID>"
+        main: {
+            name: "MAIN",
+            mainAddress: "http://3.135.222.154:8000",
+            gameAddress: "ws://3.135.222.154:800<ID>"
         },
         na: {
             name: "North America",
@@ -28,7 +28,7 @@ export const Config = {
             gameAddress: "wss://<ID>.as.suroi.io"
         }
     },
-    defaultRegion: "na",
+    defaultRegion: "main",
     mode: "normal"
 } satisfies ConfigType as ConfigType;
 
